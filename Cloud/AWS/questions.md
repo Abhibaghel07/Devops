@@ -1,10 +1,7 @@
-Here are the answers to all 55 AWS VPC-related interview questions, grouped into sections:
 
-⸻
+# Core AWS VPC Interview Questions (1–45)
 
-✅ Core AWS VPC Interview Questions (1–45)
-
-🔹 VPC Basics & Components
+## VPC Basics & Components
 	1.	What is a VPC in AWS? Why is it used?
 A Virtual Private Cloud (VPC) is a logically isolated section of the AWS cloud where you can launch AWS resources in a virtual network that you define. It enables complete control over networking.
 	2.	Main components of a VPC:
@@ -41,7 +38,7 @@ Yes. You can add secondary CIDR blocks, but can’t change the primary.
 
 ⸻
 
-🔹 Routing & Access
+## Routing & Access
 	11.	Connect two VPCs in different regions:
 Use VPC Peering (cross-region) or Transit Gateway for complex multi-VPC communication.
 	12.	Multiple route tables with a subnet?
@@ -84,7 +81,7 @@ Check reverse path in route table, NAT Gateway/IGW routes, NACLs.
 
 ⸻
 
-🔹 Security
+## Security
 	21.	Security Group vs Network ACL:
 
 	•	SG = stateful, instance-level
@@ -116,7 +113,7 @@ Check reverse path in route table, NAT Gateway/IGW routes, NACLs.
 
 ⸻
 
-🔹 Troubleshooting & Monitoring
+## Troubleshooting & Monitoring
 	28.	Private instance can’t access internet:
 
 	•	Check subnet routes
@@ -135,7 +132,7 @@ Check logs or use ping -s to test fragmentation.
 
 ⸻
 
-🔹 Automation & Environment Design
+## Automation & Environment Design
 	31.	Provision VPC via Terraform/CFN:
 Use IaC to define VPC, subnets, route tables, gateways, etc.
 	32.	Manage multiple environments:
@@ -155,7 +152,7 @@ Use IaC to define VPC, subnets, route tables, gateways, etc.
 
 ⸻
 
-🔹 Design & Scalability
+## Design & Scalability
 	35.	HA across AZs:
 
 	•	Subnets in multiple AZs
@@ -185,7 +182,7 @@ Use IaC to define VPC, subnets, route tables, gateways, etc.
 
 ⸻
 
-🔹 Logs & Observability
+## Logs & Observability
 	40.	What is VPC Flow Logs?
 
 	•	Logs all IP traffic in/out of network interfaces
@@ -219,7 +216,7 @@ Use IaC to define VPC, subnets, route tables, gateways, etc.
 
 ⸻
 
-✅ VPC Peering & Site-to-Site VPN (46–55)
+## VPC Peering & Site-to-Site VPN (46–55)
 	46.	What is VPC Peering?
 A networking connection between two VPCs to route traffic using private IPs.
 	47.	Cross-account / cross-region VPC Peering?

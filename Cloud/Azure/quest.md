@@ -1,16 +1,16 @@
 ### Azure (10 Questions)
 
 1. **What is Azure Kubernetes Service (AKS), and how do you deploy it?**
-   - **Answer**: AKS is a managed Kubernetes service. Deploy with:
-     ```bash
+**Answer**: AKS is a managed Kubernetes service. Deploy with:
+     
      az aks create --resource-group myRG --name myAKSCluster --node-count 2
      az aks get-credentials --resource-group myRG --name myAKSCluster
-     ```
+     
      Apply manifests with `kubectl apply`.
    - **DevOps Context**: Simplifies Kubernetes management.
 
 2. **How do you set up a CI/CD pipeline in Azure DevOps?**
-   - **Answer**: Create a pipeline with build, test, and deploy stages. Example:
+- **Answer**: Create a pipeline with build, test, and deploy stages. Example:
      ```yaml
      trigger:
        branches:
@@ -32,15 +32,15 @@
          command: 'apply'
          arguments: '-f k8s/deployment.yaml'
      ```
-   - **DevOps Context**: Automates deployments to AKS.
+- **DevOps Context**: Automates deployments to AKS.
 
 3. **How do you secure an AKS cluster?**
-   - **Answer**: Enable Azure AD integration, RBAC, and Network Policies. Example:
+- **Answer**: Enable Azure AD integration, RBAC, and Network Policies. Example:
      ```bash
      az aks update --resource-group myRG --name myAKSCluster --enable-aad --enable-azure-rbac
      ```
      Use private clusters and Azure Defender.
-   - **DevOps Context**: Ensures production security.
+- **DevOps Context**: Ensures production security.
 
 4. **What is Azure Container Registry (ACR), and how do you use it?**
    - **Answer**: ACR stores Docker images. Push images with:
