@@ -241,3 +241,6 @@
       ```
       Update with `kubectl apply -f deployment.yaml` and monitor with `kubectl rollout status`.
     - **DevOps Context**: Enables zero-downtime deployments in CI/CD.
+
+
+    
